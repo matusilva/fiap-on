@@ -1,0 +1,13 @@
+nome = input("Digite um funcionario: ")
+empresa = input("Digite a instituição: ")
+qtde_funcionarios = int(input("Digite a qtde de funcionários: "))
+mediaMensalidade = float(input("Digite a média da mensalidade: "))
+
+print(nome + " trabalha na " + empresa)
+print("Possui: ", qtde_funcionarios, " funcionarios")
+print("Média: " + str(mediaMensalidade))
+print("======= tipos de dados abaixo: ========")
+print("tipo de dado da variavel [nome]: ", type(nome))
+print("tipo de dado da variavel [empresa]: ", type(empresa))
+print("tipo de dado da variavel [qtde_funcionarios]: ", type(qtde_funcionarios))
+print("tipo de dado da variavel [mediaMensalidade]: ", type(mediaMensalidade))
