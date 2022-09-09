@@ -1,2 +1,3 @@
-with open("primeiro_arquivo.txt", "a") as arquivo:
-    arquivo.write("\nHakuna Matata!!")
+with open("primeiro_arquivo.txt", "r") as arquivo:
+    conteudo = arquivo.read()
+    print(conteudo)
