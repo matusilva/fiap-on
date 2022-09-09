@@ -9,3 +9,9 @@ def inserir(dicionario):
     dicionario[input("Login: ").lower()] = [input("Nome: "),
                                        input("ultima data de acesso: "),
                                        input("ultima estação acessada: ")]
+    salvar(dicionario)
+
+def salvar(dicionario):
+    with open("db.txt", "a") as arquivo:
+        for chave, valor in dicionario.items():
+            arquivo.write(chave + ":" + str(valor))
