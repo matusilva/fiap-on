@@ -14,4 +14,4 @@ def inserir(dicionario):
 def salvar(dicionario):
     with open("db.txt", "a") as arquivo:
         for chave, valor in dicionario.items():
-            arquivo.write(chave + ":" + str(valor))
+            arquivo.write("\n"+chave + ":" + str(valor))
